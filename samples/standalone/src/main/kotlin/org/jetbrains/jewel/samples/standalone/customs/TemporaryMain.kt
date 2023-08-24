@@ -14,7 +14,7 @@ fun main() = singleWindowApplication(
     title = "Platform Tab Implementation",
 ) {
     var isDark by remember { mutableStateOf(false) }
-    val theme = if (isDark) IntUiTheme.dark() else IntUiTheme.light()
+    val theme = if (isDark) IntUiTheme.darkThemeDefinition() else IntUiTheme.lightThemeDefinition()
 
     val supportedPlatform = listOf(
         Platform(
