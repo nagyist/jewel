@@ -16,7 +16,10 @@ fun PlatformsTabContent(supportedPlatforms: List<Platform>) {
         Column(verticalArrangement = Arrangement.spacedBy(SpacingInnerElements())) {
             PlatformChips(supportedPlatforms, Modifier.padding(8.dp))
         }
-        Column(verticalArrangement = Arrangement.spacedBy(SpacingInnerElements())) {
+        Column(
+            modifier = Modifier.padding(15.dp),
+            verticalArrangement = Arrangement.spacedBy(SpacingInnerElements())
+        ) {
             PlatformDetails(supportedPlatforms)
         }
     }
